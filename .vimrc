@@ -38,10 +38,8 @@ map L $
 " Resize window 
 map + +
 map _ -
-map = <C-w>> 
-map - <C-w><
-
-
+map = <C-w>> 
+map - <C-w><
 
 
 ""save and restore folds when a file is closed and reopened""
