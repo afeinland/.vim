@@ -191,7 +191,7 @@ if &t_Co > 255
    hi Tag             ctermfg=161
    hi Title           ctermfg=166
    hi Todo            ctermfg=226 ctermbg=233   cterm=bold
-
+"                       yellow 226
    hi Typedef         ctermfg=81
    hi Type            ctermfg=81                cterm=none
    hi Underlined      ctermfg=244               cterm=underline
