@@ -1,6 +1,7 @@
 """.vimrc"""
 
-set number "numbered lines
+
+
 set t_Co=256 "terminal uses 256 colors
 
 
@@ -25,6 +26,12 @@ set nowrap "no line wrap.
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Line numbering
+set relativenumber
+autocmd FocusGained * :set relativenumber
+autocmd FocusLost * :set number
+
+
 " Smart way to move between windows
 map <C-j> <C-W>j
 map <C-k> <C-W>k
@@ -42,6 +49,7 @@ map = <C-w>>
 map - <C-w><
 
 
+
 ""save and restore folds when a file is closed and reopened""
 autocmd BufWinLeave *.* mkview
 autocmd BufWinENter *.* silent loadview
@@ -50,12 +58,6 @@ autocmd BufWinENter *.* silent loadview
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Miscellaneous Key Mapping/Macros
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"insert '//' comment at beginning of line"
-"map  0i//
-"remove comment '//' comment at beginning of line"
-map  0lli
-
-
 
 
 
