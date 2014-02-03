@@ -21,13 +21,16 @@ set shiftwidth=4
 set softtabstop=4
 
 
-set nowrap "no line wrap.
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Moving around, tabs, windows and buffers
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Line numbering
-set relativenumber
+" Some options can only be checked with exists('+option'); I'm not sure why
+set number
+if exists('+relativenumber')
+      set rnu
+endif
 autocmd FocusGained * :set relativenumber
 autocmd FocusLost * :set number
 
@@ -48,7 +51,8 @@ map _ -
 map = <C-w>> 
 map - <C-w><
 
-
+"no line wrap.
+set nowrap
 
 ""save and restore folds when a file is closed and reopened""
 autocmd BufWinLeave *.* mkview
