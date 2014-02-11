@@ -3,7 +3,7 @@
 
 
 set t_Co=256 "terminal uses 256 colors
-
+set laststatus=2 " Always display status bar
 
 
 ""Colorscheme Info""
