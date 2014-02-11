@@ -4,6 +4,7 @@
 
 set t_Co=256 "terminal uses 256 colors
 set laststatus=2 " Always display status bar
+let mapleader = ","
 
 
 set hlsearch "highlight search terms
@@ -52,6 +53,11 @@ noremap + +
 noremap _ -
 noremap = <C-w>> 
 noremap - <C-w><
+
+" Create Splits like in Terminator
+noremap <leader>h :sp
+noremap <leader>j :vsp
+noremap <leader>q :wq
 
 "no line wrap.
 set nowrap
