@@ -6,6 +6,8 @@ set t_Co=256 "terminal uses 256 colors
 set laststatus=2 " Always display status bar
 
 
+set hlsearch "highlight search terms
+
 ""Colorscheme Info""
 syntax on "turn on syntax highlighting.
 colorscheme molokai "sets colorscheme from ~/.vim/colors.
@@ -31,25 +33,25 @@ set number
 if exists('+relativenumber')
       set rnu
 endif
+
 autocmd FocusGained * :set relativenumber
 autocmd FocusLost * :set number
 
-
 " Smart way to move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-h> <C-W>h
-map <C-l> <C-W>l
+noremap <C-j> <C-W>j
+noremap <C-k> <C-W>k
+noremap <C-h> <C-W>h
+noremap <C-l> <C-W>l
 
 " Move to beginning and end of line
-map H 0
-map L $
+noremap H 0
+noremap L $
 
 " Resize window 
-map + +
-map _ -
-map = <C-w>> 
-map - <C-w><
+noremap + +
+noremap _ -
+noremap = <C-w>> 
+noremap - <C-w><
 
 "no line wrap.
 set nowrap
@@ -62,7 +64,8 @@ autocmd BufWinENter *.* silent loadview
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Miscellaneous Key Mapping/Macros
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
+" Enable visual mode when jumping to brackets
+noremap % v%
 
 
 
