@@ -72,6 +72,7 @@ autocmd BufWinENter *.* silent loadview
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable visual mode when jumping to brackets
 noremap % v%
-
+" Folds cs100 header at top of file
+noremap <leader>f ggzf15j
 
 
