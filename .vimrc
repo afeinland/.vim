@@ -16,6 +16,12 @@ let g:rehash256=1 "access to dark version (idk if this works).
 hi Comment      ctermfg=59
 
 
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Moving around, tabs, windows and buffers
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""Indentation/Tab""
 set smartindent
 set tabstop=4 "how many columns (spaces) a tab accounts for.
@@ -23,11 +29,6 @@ set expandtab "changed tab to appropriate number of spaces.
 set shiftwidth=4
 set softtabstop=4
 
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Moving around, tabs, windows and buffers
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Line numbering
 " Some options can only be checked with exists('+option'); I'm not sure why
 set number
@@ -59,13 +60,15 @@ noremap <leader>h :sp
 noremap <leader>j :vsp
 noremap <leader>q :wq
 
-"no line wrap.
+" No line wrap.
 set nowrap
 
-""save and restore folds when a file is closed and reopened""
+" Save and restore folds when a file is closed and reopened
 autocmd BufWinLeave *.* mkview
 autocmd BufWinENter *.* silent loadview
 
+" Always autosave everything
+autocmd BufLeave,FocusLost * :wa
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Miscellaneous Key Mapping/Macros
