@@ -40,10 +40,10 @@ autocmd FocusGained * :set relativenumber
 autocmd FocusLost * :set number
 
 " Smart way to move between windows
-noremap <C-j> <C-W>j
-noremap <C-k> <C-W>k
-noremap <C-h> <C-W>h
-noremap <C-l> <C-W>l
+noremap j <C-W>j
+noremap k <C-W>k
+noremap h <C-W>h
+noremap l <C-W>l
 
 " Move to beginning and end of line
 noremap H 0
