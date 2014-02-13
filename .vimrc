@@ -55,9 +55,9 @@ noremap _ -
 noremap = <C-w>> 
 noremap - <C-w><
 
-" Create Splits like in Terminator
-noremap <leader>h :sp
-noremap <leader>j :vsp
+" Create and close splits like in Terminator
+noremap <leader>o :sp
+noremap <leader>e :vsp
 noremap <leader>q :wq
 
 " No line wrap.
