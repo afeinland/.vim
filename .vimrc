@@ -78,4 +78,3 @@ noremap % v%
 " Folds cs100 header at top of file
 noremap <leader>f ggzf15j
 
-
