@@ -1,9 +1,13 @@
 """.vimrc"""
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => General Setup/Appearance
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set t_Co=256 "terminal uses 256 colors
+set t_Co=256 " Terminal uses 256 colors
 set laststatus=2 " Always display status bar
+set ruler " Show line/column in status bar
 let mapleader = ","
 
 
