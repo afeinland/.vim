@@ -1,5 +1,7 @@
 """.vimrc"""
 
+""Pathogen plugin manager""
+execute pathogen#infect()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General Setup/Appearance
@@ -20,6 +22,12 @@ let g:rehash256=1 "access to dark version (idk if this works).
 hi Comment      ctermfg=59
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => NERDTree
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"shortcut for open/closing NERDTree
+noremap <C-n> :NERDTreeToggle<CR>
 
 
 
