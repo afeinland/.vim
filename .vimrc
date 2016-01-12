@@ -87,6 +87,8 @@ autocmd BufLeave,FocusLost * :wa
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Enable visual mode when jumping to brackets
 noremap % v%
-" Folds cs100 header at top of file
-noremap <leader>f ggzf15j
+" Copy word under cursor (yank inner word)
+noremap <leader>c yiw
+" Paste yanked word over current word under cursor
+noremap <leader>p viw"0p
 
