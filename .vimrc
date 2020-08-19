@@ -42,10 +42,6 @@ if exists('+relativenumber')
 endif
 
 
-" Move to beginning and end of line
-noremap H 0
-noremap L $
-
 
 " Resize window 
 noremap + +
