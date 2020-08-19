@@ -47,6 +47,21 @@ noremap H 0
 noremap L $
 
 
+" Resize window 
+noremap + +
+noremap _ -
+noremap = <C-w>> 
+noremap - <C-w><
+
+" Create and close splits like in Terminator
+noremap <leader>o :sp
+noremap <leader>e :vsp
+noremap <leader>q :wq
+
+" No line wrap.
+set nowrap
+
+
 
 " Save and restore folds when a file is closed and reopened
 autocmd BufWinLeave *.* mkview
