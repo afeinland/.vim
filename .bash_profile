@@ -2,16 +2,16 @@
 #PS1='\h:\W \u\$ ' #default
 
 #PS1='[\u@\h \W]\$ ‘  # Default
-PS1='\[\e[1;32m\]\u@\h \W \$\[\e[0m\] '
+PS1='\u@\h \[\e[36m\]\]\w \$\[\e[0m\] '
 # If a color value is left out, the default is assumed
-# i.e. [\e[1;32m\] is the same as [\e[32m\]. Black text background
+# i.e. [\e[1;32m\] is the same as [\e[32m\]. Black text background.
 
 
 # Make bash check its window size after a process completes
 shopt -s checkwinsize
 
 export CLICOLOR=1 #activate Terminal colors
-export LSCOLORS=Exfxcxdxcxegedabagacad
+export LSCOLORS=exfxcxdxcxegedabagacad
 
 alias ls="ls -GF " # I think -G does the same thing as above, but is less customizeable
 alias ll="ls -la"
